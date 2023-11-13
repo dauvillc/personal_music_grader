@@ -1,0 +1,100 @@
+# Define in this file the criteria that will be asked
+# about the songs.
+# Syntax:
+# criterion:
+#  range: [min, max]
+#  ask: "Question to ask, e.g. "how much would you like to listen to that song right now ?"
+overall:
+  "Let's look at how much you enjoy that song overall."
+  listen_rn:
+    range: [0, 3]
+    ask: >
+      Would you enjoy listening to that song right now ?
+      0 - Not really. 1 - Why not. 2 - Yeah sure. 3 - I wanna listen to it at all times...
+  repeat:
+    range: [0, 1]
+    ask: >
+      When you listen to it, would you still enjoy it a second time right after ?
+  intro:
+    range: [0, 2]
+    ask: >
+      Do you feel particularly hyped when hearing the song's intro ?
+      0 - I feel nothing particular. 1 - It makes me wanna listen to the rest. 2 - I'm reaally hyped.
+emotions:
+  "Let's now look at the emotions that the song triggers in you."
+  smile:
+    range: [0, 3]
+    ask: >
+      Can this song bring a smile to your face / Is it likely to do so ?
+      0 - Definitely not.
+      1 - A little smile, yeah, could happen. I might not show it though.
+      2 - It pretty much makes me happy on the spot.
+      3 - It makes me genuinely happy, to the point where I might move around a little, or wanna sing along.
+  tears:
+    range: [0, 3]
+    ask: >
+      Can this song bring tears ? Note that this is not necessarily exclusive with the smile / happiness.
+      0 - Definitely not.
+      1 - It won't make me cry, but it can change my mood.
+      2 - It can affect me enough to make me stop doing my current activity and think.
+      3 - It can sometimes genuinely make me cry.
+  energy:
+    range: [-2, 2]
+    ask: >
+      What energy does this song bring to you ?
+      -2 - It makes me want to lie down and close my eyes.
+      -1 - It makes me calm / relaxed.
+      0 - Nothing particular - I keep doing what I was doing.
+      1 - It motivates me.
+      2 - It gives me so much energy that I physically start to move more.
+personal_meaning:
+  "Let's now look at what that song actually means to you"
+  history:
+    range: [0, 2]
+    ask: >
+      When was the first time you purposedly listened to that song ?
+      0 - I never listened to it myself, or I started less than a year ago.
+      1 - I've known it for a very long time, but there were phases when I would not listen to it.
+      2 - I've known it for a very long time, and always listened to it regularly.
+  nostalgia:
+    range: [0, 3]
+    ask: >
+      Does that song make you feel nostalgic ?
+      0 - Nope, still in the present.
+      1 - I can remember a period I would listen to it.
+      3 - It is clearly associated with a period of my life.
+      4 - It throws me back to an important memory.
+  lyrics:
+    "Do you the song's lyrics mean something special to you ?"
+    range: [0, 3]
+    ask: >
+      0 - No lyrics, or I don't know the lyrics, or I don't find them particularly interesting.
+      1 - I find them well written, and understand their purpose.
+      2 - They have a special meaning. Some words / sentences / verses especially apply to my life, my mood, ..
+      3 - I feel like that song almost perfectly describes me, my life, or something important to me.
+musical:
+  "Let's now look at how well you regard its musical composition"
+  musical_liking:
+    range: [0, 4]
+    ask: >
+      How much do you like the musical chords (the successful notes that compose the lyrics and background) ?
+      0 - I don't find any part especially interesting.
+      1 - I like the notes of the verses, or of the refrain.
+      2 - I like the notes of the whole song.
+      3 - I like the notes overall, and there are parts I particularly enjoy.
+      4 - All differents parts of the song sound outstanding to me.
+  lyrics_flow:
+    range: [0, 2]
+    ask: >
+      Do you find that the lyrics flow together in an aggreable manner ? (Independently of their meaning)
+      0 - They're just sentences put one after the other.
+      1 - Each verse makes the next one come naturally.
+      2 - Their sounds and rythms gives a great style to the song.
+  originality:
+    range: [0, 2]
+    ask: >
+      Do you find that song original from a musical point of view ?
+      0 - It sounds similar to a lot of other songs.
+      1 - Its musical style is clear, but some parts stand out and give the song an indentity.
+      2 - Most of the song is almost a new musical genre by itself.
+
